@@ -1,0 +1,10 @@
+[build]
+target = "x86_64-sel4.json"
+rustflags = ["-C", "panic=abort"]
+
+artifact-dir = "target/out" # Put the final binary in a known directory
+
+[unstable]
+unstable-options = true # Needed for artifact-dir
+build-std = ["core"]
+build-std-features = ["compiler-builtins-mem"]

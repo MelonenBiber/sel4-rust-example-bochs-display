@@ -1,0 +1,11 @@
+[package]
+name = "sel4-rust-example-bochs-display"
+version = "0.1.0"
+edition = "2021"
+build = "build.rs"
+
+[dependencies]
+
+[build-dependencies]
+bindgen = { version = "=0.69.4", features = ["experimental"] }
+cc = "=1.1.18"
